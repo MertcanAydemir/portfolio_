@@ -1,11 +1,11 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { FaGithub, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 export function Contact() {
     const [formData, setFormData] = useState({
-        name: "",
-        email: "",
+        name: "Mertcan Aydemir",
+        email: "mertcanaydemir973@gmail.com",
         message: ""
     });
     const [submitted, setSubmitted] = useState(false);
@@ -40,11 +40,11 @@ export function Contact() {
         if (validate()) {
             setIsSubmitting(true);
 
-            // Simulating form submission
+            // Form gönderimi simülasyonu
             setTimeout(() => {
                 setIsSubmitting(false);
                 setSubmitted(true);
-                setFormData({ name: "", email: "", message: "" });
+                setFormData({ ...formData, message: "" });
             }, 1000);
         }
     };
@@ -156,8 +156,8 @@ export function Contact() {
                     </div>
 
                     <div className="md:w-1/2">
-                        <div className="bg-white p-8 rounded-lg shadow-md text-gray-900">
-                            <h3 className="text-2xl font-semibold mb-6 text-gray-900">Mesaj Gönder</h3>
+                        <div className="bg-white p-8 rounded-lg shadow-md text-dark">
+                            <h3 className="text-2xl font-semibold mb-6 text-dark">Mesaj Gönder</h3>
 
                             {submitted ? (
                                 <div className="text-center py-8">
@@ -177,12 +177,12 @@ export function Contact() {
                                             Ad Soyad
                                         </label>
                                         <input
+                                            type="text"
                                             id="name"
                                             name="name"
-                                            type="text"
                                             value={formData.name}
                                             onChange={handleChange}
-                                            className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors ${errors.name ? 'border-red-500' : 'border-gray-300'}`}
+                                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
                                             placeholder="Adınız ve soyadınız"
                                         />
                                         {errors.name && (
@@ -195,12 +195,12 @@ export function Contact() {
                                             E-posta
                                         </label>
                                         <input
+                                            type="email"
                                             id="email"
                                             name="email"
-                                            type="email"
                                             value={formData.email}
                                             onChange={handleChange}
-                                            className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors ${errors.email ? 'border-red-500' : 'border-gray-300'}`}
+                                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
                                             placeholder="E-posta adresiniz"
                                         />
                                         {errors.email && (
@@ -215,10 +215,10 @@ export function Contact() {
                                         <textarea
                                             id="message"
                                             name="message"
-                                            rows={5}
                                             value={formData.message}
                                             onChange={handleChange}
-                                            className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors ${errors.message ? 'border-red-500' : 'border-gray-300'}`}
+                                            rows={5}
+                                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
                                             placeholder="Mesajınız"
                                         />
                                         {errors.message && (

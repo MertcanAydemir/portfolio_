@@ -16,6 +16,7 @@ export function Footer() {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-gray-400 hover:text-white transition-colors"
+                            aria-label="GitHub"
                         >
                             <FaGithub size={24} />
                         </a>

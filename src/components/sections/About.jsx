@@ -1,3 +1,5 @@
+import React from 'react';
+
 export function About() {
     return (
         <section id="about" className="section py-16 bg-gradient text-white" style={{ background: "linear-gradient(135deg, #3B82F6 0%, #6366F1 100%)" }}>

@@ -1,3 +1,5 @@
+import React from 'react';
+
 export function Hero() {
     const scrollToSection = (id) => {
         const element = document.querySelector(id);
