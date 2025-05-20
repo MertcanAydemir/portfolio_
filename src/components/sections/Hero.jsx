@@ -1,5 +1,3 @@
-import React from 'react';
-
 export function Hero() {
     const scrollToSection = (id) => {
         const element = document.querySelector(id);
@@ -35,10 +33,12 @@ export function Hero() {
                     </div>
                     <div className="md:w-1/2 flex justify-center">
                         <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gray-300 border-8 border-white shadow-xl flex items-center justify-center">
-                            <svg className="w-32 h-32 text-gray-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                                <path d="M20.5899 22C20.5899 18.13 16.7399 15 11.9999 15C7.25991 15 3.40991 18.13 3.40991 22" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                            </svg>
+                            <img
+                                src="https://i.postimg.cc/13P601pn/Whats-App-Image-2025-05-18-at-18-51-55.jpg"
+                                alt="Mertcan Aydemir"
+                                className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-8 border-white shadow-xl"
+                            />
+
                         </div>
                     </div>
                 </div>

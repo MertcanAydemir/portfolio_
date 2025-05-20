@@ -4,8 +4,8 @@ import { FaXTwitter } from "react-icons/fa6";
 
 export function Contact() {
     const [formData, setFormData] = useState({
-        name: "Mertcan Aydemir",
-        email: "mertcanaydemir973@gmail.com",
+        name: "",
+        email: "",
         message: ""
     });
     const [submitted, setSubmitted] = useState(false);
@@ -102,7 +102,7 @@ export function Contact() {
                                     </div>
                                     <div>
                                         <h4 className="text-lg font-medium mb-1">Konum</h4>
-                                        <p>Türkiye</p>
+                                        <p>Türkiye/Balıkesir</p>
                                     </div>
                                 </div>
                             </div>
@@ -119,7 +119,7 @@ export function Contact() {
                                         <FaGithub className="text-xl" />
                                     </a>
                                     <a
-                                        href="#"
+                                        href=""
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="bg-white/20 hover:bg-white/30 w-12 h-12 flex items-center justify-center rounded-full transition-colors"
@@ -127,7 +127,7 @@ export function Contact() {
                                         <FaXTwitter className="text-xl" />
                                     </a>
                                     <a
-                                        href="#"
+                                        href=""
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="bg-white/20 hover:bg-white/30 w-12 h-12 flex items-center justify-center rounded-full transition-colors"
@@ -135,7 +135,7 @@ export function Contact() {
                                         <FaYoutube className="text-xl" />
                                     </a>
                                     <a
-                                        href="#"
+                                        href=""
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="bg-white/20 hover:bg-white/30 w-12 h-12 flex items-center justify-center rounded-full transition-colors"

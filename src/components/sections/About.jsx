@@ -8,14 +8,11 @@ export function About() {
 
                 <div className="flex flex-col md:flex-row items-center">
                     <div className="md:w-1/2 mb-8 md:mb-0">
-                        <div className="rounded-lg shadow-xl overflow-hidden bg-white/10 backdrop-blur-sm p-2">
-                            <svg className="w-full h-auto" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="600" height="400" fill="#1E3A8A" fillOpacity="0.1"/>
-                                <path d="M150,150 L450,150 L450,250 L150,250 Z" fill="#3B82F6" fillOpacity="0.5"/>
-                                <circle cx="300" cy="200" r="50" fill="#6366F1" fillOpacity="0.8"/>
-                                <path d="M200,100 L400,100 L400,300 L200,300 Z" stroke="white" strokeWidth="4" fill="none"/>
-                                <text x="300" y="200" textAnchor="middle" dominantBaseline="middle" fill="white" fontFamily="monospace" fontSize="20">code</text>
-                            </svg>
+                        <div>
+                            <img
+                            src="https://i.postimg.cc/pTYMF8xn/Whats-App-Image-2025-05-18-at-18-58-35-1.jpg"
+                        />
+
                         </div>
                     </div>
 

@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import {
-    Laptop,
-    Smartphone,
-    Database,
-    GitBranch
+    FaLaptop,
+    FaMobileAlt,
+    FaDatabase,
+    FaCodeBranch
 } from "react-icons/fa";
 
 export function Skills() {
@@ -12,30 +12,36 @@ export function Skills() {
 
     const technicalSkills = [
         { name: "HTML/CSS", percentage: 90 },
+        { name: "Python", percentage: 90 },
         { name: "JavaScript", percentage: 85 },
-        { name: "React.js", percentage: 80 },
-        { name: "Node.js", percentage: 75 },
-        { name: "MongoDB", percentage: 70 },
+        { name: "C#", percentage: 80 },
+        { name: "React", percentage: 80 },
+        { name: "Autodesk Fusion", percentage: 80 },
+        { name: "MatLab", percentage: 80 },
+
+
+
+
     ];
 
     const otherSkills = [
         {
-            icon: <Laptop className="h-8 w-8" />,
+            icon: <FaLaptop className="h-8 w-8" />,
             title: "UI/UX Tasarım",
             description: "Kullanıcı odaklı, estetik ve kullanımı kolay arayüzler tasarlama"
         },
         {
-            icon: <Smartphone className="h-8 w-8" />,
+            icon: <FaMobileAlt className="h-8 w-8" />,
             title: "Responsive Tasarım",
             description: "Tüm cihazlarda mükemmel çalışan web uygulamaları geliştirme"
         },
         {
-            icon: <Database className="h-8 w-8" />,
+            icon: <FaDatabase className="h-8 w-8" />,
             title: "Veritabanı Yönetimi",
-            description: "Etkili veri modelleme ve veritabanı yapılandırma becerileri"
+            description: "Etkili veri ve veritabanı yapılandırma "
         },
         {
-            icon: <GitBranch className="h-8 w-8" />,
+            icon: <FaCodeBranch className="h-8 w-8" />,
             title: "Git & GitHub",
             description: "Versiyon kontrolü ve ekip çalışması için Git ve GitHub kullanımı"
         }

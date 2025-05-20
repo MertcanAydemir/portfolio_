@@ -1,5 +1,6 @@
 import { FaGithub } from "react-icons/fa";
 
+
 export function Footer() {
     return (
         <footer className="bg-dark text-white py-8">

@@ -1,66 +1,63 @@
 import React from 'react';
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt, FaFilePdf } from "react-icons/fa";
 
 export function Portfolio() {
     const projects = [
         {
-            title: "E-ticaret Platformu",
-            description: "Modern ve kullanıcı dostu bir e-ticaret platformu. React, Node.js ve MongoDB kullanılarak geliştirildi.",
-            tags: ["React", "Node.js", "MongoDB"],
+            title: "Regresyon Araştırmam",
+            description: "Regresyon analizi üzerine yaptığım çalışmada, değişkenler arasındaki ilişkileri istatistiksel olarak inceleyerek verileri yorumlama ve geleceğe yönelik tahminlerde bulunma becerisi kazandım.",
+            tags: [],
             image: (
-                <svg className="w-full h-48 bg-blue-100" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="600" height="400" fill="#DBEAFE" />
-                    <rect x="50" y="50" width="500" height="300" fill="#BFDBFE" rx="8" />
-                    <rect x="100" y="100" width="150" height="150" fill="#93C5FD" rx="4" />
-                    <rect x="300" y="100" width="200" height="30" fill="#60A5FA" rx="4" />
-                    <rect x="300" y="150" width="200" height="20" fill="#3B82F6" rx="4" />
-                    <rect x="300" y="190" width="150" height="20" fill="#2563EB" rx="4" />
-                    <rect x="100" y="280" width="400" height="40" fill="#1D4ED8" rx="4" />
-                </svg>
+                <img src="https://i.postimg.cc/Hkgwqm6j/dogrusal-linear-regresyon-nedir-800x400.jpg" alt="Regresyon" width="350" />
             ),
-            demoLink: "#",
-            githubLink: "https://github.com/MertcanAydemir",
+            pdfLink: "/linear_regresyon.pdf",
+
         },
         {
-            title: "Görev Yönetim Uygulaması",
-            description: "Kanban tarzı görev yönetim uygulaması. Sürükle-bırak özelliği, görev atama ve bildirimler içerir.",
-            tags: ["Vue.js", "Firebase", "Tailwind CSS"],
+            title: "Çoklu Linear Regresyon Araştırmam",
+            description: "Linear regresyon üzerine yaptığım çalışmada, bağımlı ve bağımsız değişkenler arasındaki doğrusal ilişkiyi analiz ederek veri setlerinden anlamlı sonuçlar çıkarma ve geleceğe yönelik öngörülerde bulunma yetkinliği edindim.",
+            tags: [],
             image: (
-                <svg className="w-full h-48 bg-green-100" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="600" height="400" fill="#DCFCE7" />
-                    <rect x="50" y="50" width="500" height="300" fill="#BBF7D0" rx="8" />
-                    <rect x="75" y="100" width="120" height="200" fill="#86EFAC" rx="4" />
-                    <rect x="240" y="100" width="120" height="200" fill="#4ADE80" rx="4" />
-                    <rect x="405" y="100" width="120" height="200" fill="#22C55E" rx="4" />
-                    <rect x="90" y="120" width="90" height="30" fill="#16A34A" rx="4" />
-                    <rect x="90" y="170" width="90" height="30" fill="#16A34A" rx="4" />
-                    <rect x="255" y="120" width="90" height="30" fill="#15803D" rx="4" />
-                    <rect x="420" y="120" width="90" height="30" fill="#166534" rx="4" />
-                </svg>
+                <img src="https://i.postimg.cc/PqtXjnQy/1-n-Dmy-Gg7-Jb-DQJlfk-R13hk-Kw.png" alt="Çoklu Linear Regresyon" width="250" />
             ),
-            demoLink: "#",
-            githubLink: "https://github.com/MertcanAydemir",
+            pdfLink: "/coklu_linear_regresyon.pdf",
+
         },
         {
-            title: "Hava Durumu Uygulaması",
-            description: "Konuma dayalı hava durumu tahmini uygulaması. 7 günlük tahmin ve saatlik detaylar sunar.",
-            tags: ["JavaScript", "API", "CSS3"],
+            title: "Newton-Raphson Yöntemi Araştırmam",
+            description: "Newton-Raphson Yöntemi’ni nümerik analiz kapsamında araştırarak öğrenme fırsatı buldum ve bu sayede denklemlerin köklerini hızlı ve etkili bir şekilde bulmayı sağlayan güçlü bir yöntem olduğunu kavradım.",
+            tags: [],
             image: (
-                <svg className="w-full h-48 bg-indigo-100" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="600" height="400" fill="#E0E7FF" />
-                    <rect x="50" y="50" width="500" height="300" fill="#C7D2FE" rx="8" />
-                    <circle cx="150" cy="150" r="60" fill="#A5B4FC" />
-                    <path d="M350,120 Q400,80 450,120 Q500,160 450,200 Q400,240 350,200 Q300,160 350,120 Z" fill="#6366F1" />
-                    <rect x="100" y="250" width="400" height="60" fill="#4F46E5" rx="4" />
-                    <rect x="100" y="250" width="70" height="60" fill="#4338CA" rx="4" />
-                    <rect x="180" y="250" width="70" height="60" fill="#3730A3" rx="4" />
-                    <rect x="260" y="250" width="70" height="60" fill="#312E81" rx="4" />
-                    <rect x="340" y="250" width="70" height="60" fill="#1E1B4B" rx="4" />
-                    <rect x="420" y="250" width="70" height="60" fill="#312E81" rx="4" />
-                </svg>
+                <img src="https://i.postimg.cc/Y2J2qCK2/a-Incremental-Iterative-Technique-b-Full-Newton-Raphson-Method.png" alt="Newton-Raphson" width="250" />
             ),
-            demoLink: "#",
-            githubLink: "https://github.com/MertcanAydemir",
+            pdfLink: "/MertcanAydemir_202313709075_Nümerik.pdf",
+        },
+        {
+            title: "Silah Lisanslama Ve Satış Uyguluması",
+            description: "Bir silah sistemin alışı için yapılması gerekenler ve satış işlemleri için bir uygulama tasarladım.",
+            tags: ["PyQt5", "SqLite", "Python"],
+            image: (
+                <img src="https://i.postimg.cc/SQG9jKph/8db14c-7fd0d477eb7144199e8f9cc118967d0d-mv2.webp" alt="Silah Lisanslama Ve Satış" width="300" height="500" />
+            ),
+            githubLink: "https://github.com/MertcanAydemir/arms_licensing_and_sales",
+        },
+        {
+            title: "Soru Bankası Uygulaması",
+            description: "Soru bankası uygulamam, kullanıcıların kendi sorularını hazırlayıp sisteme yükleyebildiği kişisel ve özelleştirilebilir bir soru yönetim platformudur.",
+            tags: ["PyQt5", "Python"],
+            image: (
+                <img src="https://i.postimg.cc/zfLcxWpT/kitap-okumak-2.webp" alt="Soru Bankası" width="400" />
+            ),
+            githubLink: "https://github.com/MertcanAydemir/question_bank_",
+        },
+        {
+            title: "Metin Düzenleyici Uygulaması",
+            description: "Metin düzenleyici uygulamam, kullanıcıların yazılarını oluşturup düzenleyebileceği basit ve işlevsel bir yazım aracı olarak tasarlanmıştır.",
+            tags: ["PyQt5", "Python"],
+            image: (
+                <img src="https://i.postimg.cc/BQxvYYMB/cke-default-font.png" alt="Metin Düzenleyici" width="400" />
+            ),
+            githubLink: "https://github.com/MertcanAydemir/text_editor_",
         },
     ];
 
@@ -75,15 +72,13 @@ export function Portfolio() {
                             key={index}
                             className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300"
                         >
-                            <div className="w-full h-48 overflow-hidden">
+                            <div className="w-full h-48 overflow-hidden flex items-center justify-center">
                                 {project.image}
                             </div>
 
                             <div className="p-6">
                                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                                <p className="text-gray-600 mb-4">
-                                    {project.description}
-                                </p>
+                                <p className="text-gray-600 mb-4">{project.description}</p>
 
                                 <div className="flex flex-wrap gap-2 mb-4">
                                     {project.tags.map((tag, tagIndex) => (
@@ -91,30 +86,32 @@ export function Portfolio() {
                                             key={tagIndex}
                                             className="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded"
                                         >
-                      {tag}
-                    </span>
+                                            {tag}
+                                        </span>
                                     ))}
                                 </div>
 
-                                <div className="flex justify-between">
-                                    {project.demoLink && (
+                                <div className="flex flex-wrap gap-4 items-center">
+                                    {project.pdfLink && (
                                         <a
-                                            href={project.demoLink}
-                                            className="text-primary hover:text-blue-700 font-medium transition-colors flex items-center"
+                                            href={project.pdfLink}
+                                            className="text-red-600 hover:text-red-800 font-medium transition-colors flex items-center"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
-                                            <FaExternalLinkAlt className="mr-1" /> Demo
+                                            <FaFilePdf className="mr-1" /> PDF
                                         </a>
                                     )}
-                                    <a
-                                        href={project.githubLink}
-                                        className="text-dark hover:text-primary transition-colors flex items-center"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        <FaGithub className="mr-1" /> Kaynak Kod
-                                    </a>
+                                    {project.githubLink && (
+                                        <a
+                                            href={project.githubLink}
+                                            className="text-gray-800 hover:text-black transition-colors flex items-center"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            <FaGithub className="mr-1" /> GitHub
+                                        </a>
+                                    )}
                                 </div>
                             </div>
                         </div>
@@ -126,7 +123,7 @@ export function Portfolio() {
                         href="https://github.com/MertcanAydemir"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center bg-dark hover:bg-gray-800 text-white font-medium py-3 px-8 rounded-lg transition-colors"
+                        className="inline-flex items-center bg-gray-800 hover:bg-gray-900 text-white font-medium py-3 px-8 rounded-lg transition-colors"
                     >
                         <FaGithub className="mr-2" /> Daha Fazla Proje İçin GitHub Profilimi Ziyaret Edin
                     </a>

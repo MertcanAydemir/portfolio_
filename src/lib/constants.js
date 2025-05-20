@@ -1,35 +1,14 @@
-import { FaGithub, FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaGithub, FaFacebook, FaInstagram, FaYoutube, FaTwitter } from "react-icons/fa";
 
 /**
- * Sosyal medya linkleri
+ * Sosyal medya linkleri (icon component referansları)
  */
 export const SOCIAL_LINKS = [
-    {
-        name: "GitHub",
-        url: "https://github.com/MertcanAydemir",
-        icon: <FaGithub className="text-xl" />,
-    },
-    {
-        name: "Twitter",
-        url: "#",
-        icon: <FaXTwitter className="text-xl" />,
-    },
-    {
-        name: "Instagram",
-        url: "#",
-        icon: <FaInstagram className="text-xl" />,
-    },
-    {
-        name: "YouTube",
-        url: "#",
-        icon: <FaYoutube className="text-xl" />,
-    },
-    {
-        name: "Facebook",
-        url: "#",
-        icon: <FaFacebook className="text-xl" />,
-    },
+    { name: "GitHub", url: "https://github.com/MertcanAydemir", icon: FaGithub },
+    { name: "Twitter", url: "#", icon: FaTwitter },
+    { name: "Instagram", url: "#", icon: FaInstagram },
+    { name: "YouTube", url: "#", icon: FaYoutube },
+    { name: "Facebook", url: "#", icon: FaFacebook },
 ];
 
 /**
@@ -56,10 +35,10 @@ export const NAV_LINKS = [
  */
 export const TECHNICAL_SKILLS = [
     { name: "HTML/CSS", percentage: 90 },
-    { name: "JavaScript", percentage: 85 },
-    { name: "React.js", percentage: 80 },
+    { name: "JavaScript", percentage: 80 },
+    { name: "React.js", percentage: 75 },
     { name: "Node.js", percentage: 75 },
-    { name: "MongoDB", percentage: 70 },
+    { name: "", percentage: 85 },
 ];
 
 /**
@@ -67,23 +46,30 @@ export const TECHNICAL_SKILLS = [
  */
 export const PROJECTS = [
     {
-        title: "E-ticaret Platformu",
-        description: "Modern ve kullanıcı dostu bir e-ticaret platformu. React, Node.js ve MongoDB kullanılarak geliştirildi.",
-        tags: ["React", "Node.js", "MongoDB"],
+        title: "Regresyon Araştırmam",
+        description: "Regresyon analizi üzerine yaptığım çalışmada, değişkenler arasındaki ilişkileri istatistiksel olarak inceleyerek verileri yorumlama ve geleceğe yönelik tahminlerde bulunma becerisi kazandım.",
+        tags: [],
         demoLink: "#",
         githubLink: "https://github.com/MertcanAydemir",
     },
     {
-        title: "Görev Yönetim Uygulaması",
-        description: "Kanban tarzı görev yönetim uygulaması. Sürükle-bırak özelliği, görev atama ve bildirimler içerir.",
+        title: "Linear Regresyon Araştırmam",
+        description: "Linear regresyon üzerine yaptığım çalışmada, bağımlı ve bağımsız değişkenler arasındaki doğrusal ilişkiyi analiz ederek veri setlerinden anlamlı sonuçlar çıkarma ve geleceğe yönelik öngörülerde bulunma yetkinliği edindim.",
         tags: ["Vue.js", "Firebase", "Tailwind CSS"],
         demoLink: "#",
         githubLink: "https://github.com/MertcanAydemir",
     },
     {
-        title: "Hava Durumu Uygulaması",
-        description: "Konuma dayalı hava durumu tahmini uygulaması. 7 günlük tahmin ve saatlik detaylar sunar.",
-        tags: ["JavaScript", "API", "CSS3"],
+        title: "Silah Lisanslama Ve Satış Uygulaması",
+        description: "Bir silah sistemin alışı için yapılması gerekenler ve satış işlemleri.",
+        tags: ["PyQt5", "SqLite", "QSS"],
+        demoLink: "#",
+        githubLink: "https://github.com/MertcanAydemir",
+    },
+    {
+        title: "Newton-Raphson Yöntemi Araştırmam",
+        description: "Newton-Raphson Yöntemi’ni nümerik analiz kapsamında araştırarak öğrenme fırsatı buldum ve bu sayede denklemlerin köklerini hızlı ve etkili bir şekilde bulmayı sağlayan güçlü bir yöntem olduğunu kavradım.",
+        tags: [],
         demoLink: "#",
         githubLink: "https://github.com/MertcanAydemir",
     }

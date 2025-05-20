@@ -6,6 +6,7 @@ import { Skills } from './components/sections/Skills';
 import { Portfolio } from './components/sections/Portfolio';
 import { Contact } from './components/sections/Contact';
 
+
 function App() {
     return (
         <div className="flex flex-col min-h-screen">

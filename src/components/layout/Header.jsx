@@ -1,12 +1,5 @@
 import { useState, useEffect } from "react";
-
-const navLinks = [
-    { name: "Ana Sayfa", href: "#home" },
-    { name: "Ben Kimim", href: "#about" },
-    { name: "Neler Yapabilirim", href: "#skills" },
-    { name: "Portfolyo", href: "#portfolio" },
-    { name: "İletişim", href: "#contact" },
-];
+import { NAV_LINKS, SOCIAL_LINKS } from "../../lib/constants";
 
 export function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -36,6 +29,7 @@ export function Header() {
             }`}
         >
             <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+                {/* Logo */}
                 <div className="text-2xl font-bold font-['Poppins'] text-primary">
                     <a href="#home" onClick={(e) => { e.preventDefault(); scrollToSection("#home"); }}>
                         MA
@@ -44,7 +38,7 @@ export function Header() {
 
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex space-x-8">
-                    {navLinks.map((link) => (
+                    {NAV_LINKS.map((link) => (
                         <a
                             key={link.href}
                             href={link.href}
@@ -56,7 +50,7 @@ export function Header() {
                     ))}
                 </nav>
 
-                {/* Mobile Navigation */}
+                {/* Mobile Menu Button */}
                 <button
                     className="md:hidden p-2"
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -74,11 +68,11 @@ export function Header() {
                 </button>
             </div>
 
-            {/* Mobile Menu */}
+            {/* Mobile Navigation */}
             {isMobileMenuOpen && (
                 <div className="md:hidden bg-white shadow-lg">
                     <div className="px-4 py-3 space-y-3">
-                        {navLinks.map((link) => (
+                        {NAV_LINKS.map((link) => (
                             <a
                                 key={link.href}
                                 href={link.href}
@@ -91,6 +85,25 @@ export function Header() {
                     </div>
                 </div>
             )}
+
+            {/* Sosyal Medya İkonları */}
+            <div className="hidden md:flex justify-center space-x-4 mt-4">
+                {SOCIAL_LINKS.map((social) => {
+                    const Icon = social.icon; // Burada icon component olarak geliyor
+                    return (
+                        <a
+                            key={social.name}
+                            href={social.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-500 hover:text-primary transition-colors"
+                            aria-label={social.name}
+                        >
+                            <Icon className="text-xl" />
+                        </a>
+                    );
+                })}
+            </div>
         </header>
     );
 }
