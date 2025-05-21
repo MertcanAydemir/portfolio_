@@ -10,7 +10,9 @@ export function About() {
                     <div className="md:w-1/2 mb-8 md:mb-0">
                         <div>
                             <img
-                            src="https://i.postimg.cc/pTYMF8xn/Whats-App-Image-2025-05-18-at-18-58-35-1.jpg"
+                            src="/Photograph/akşamdenizi.jpeg"
+                            alt="Mertcan Aydemir"
+                            className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-8 border-white shadow-xl"
                         />
 
                         </div>

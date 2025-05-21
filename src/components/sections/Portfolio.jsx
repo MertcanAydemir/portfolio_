@@ -36,7 +36,7 @@ export function Portfolio() {
             description: "Bir silah sistemin alışı için yapılması gerekenler ve satış işlemleri için bir uygulama tasarladım.",
             tags: ["PyQt5", "SqLite", "Python"],
             image: (
-                <img src="/Photograph/Silah_sistemleri.jpg" alt="Silah Lisanslama Ve Satış" width="300" height="500" />
+                <img src="/Photograph/Silah_sistemleri.jpg" alt="Silah Lisanslama Ve Satış" width="500" />
             ),
             githubLink: "https://github.com/MertcanAydemir/arms_licensing_and_sales",
         },

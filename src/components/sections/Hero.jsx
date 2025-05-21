@@ -34,7 +34,7 @@ export function Hero() {
                     <div className="md:w-1/2 flex justify-center">
                         <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gray-300 border-8 border-white shadow-xl flex items-center justify-center">
                             <img
-                                src="https://i.postimg.cc/13P601pn/Whats-App-Image-2025-05-18-at-18-51-55.jpg"
+                                src="/Photograph/sabahdenizi.jpeg"
                                 alt="Mertcan Aydemir"
                                 className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-8 border-white shadow-xl"
                             />
