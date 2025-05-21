@@ -8,19 +8,18 @@ export function Portfolio() {
             description: "Regresyon analizi üzerine yaptığım çalışmada, değişkenler arasındaki ilişkileri istatistiksel olarak inceleyerek verileri yorumlama ve geleceğe yönelik tahminlerde bulunma becerisi kazandım.",
             tags: [],
             image: (
-                <img src="https://i.postimg.cc/Hkgwqm6j/dogrusal-linear-regresyon-nedir-800x400.jpg" alt="Regresyon" width="350" />
+                <img src="/Photograph/dogrusal-linear-regresyon.jpeg" alt="Regresyon"  />
             ),
-            pdfLink: "/linear_regresyon.pdf",
-
+            pdfLink: "/pdf_file/linear_regresyon.pdf",
         },
         {
             title: "Çoklu Linear Regresyon Araştırmam",
             description: "Linear regresyon üzerine yaptığım çalışmada, bağımlı ve bağımsız değişkenler arasındaki doğrusal ilişkiyi analiz ederek veri setlerinden anlamlı sonuçlar çıkarma ve geleceğe yönelik öngörülerde bulunma yetkinliği edindim.",
             tags: [],
             image: (
-                <img src="https://i.postimg.cc/PqtXjnQy/1-n-Dmy-Gg7-Jb-DQJlfk-R13hk-Kw.png" alt="Çoklu Linear Regresyon" width="250" />
+                <img src="/Photograph/Çoklu_lineer_regresyon.png" alt="Çoklu Linear Regresyon" width="300" />
             ),
-            pdfLink: "/coklu_linear_regresyon.pdf",
+             pdfLink: "/pdf_file/coklu_linear_regresyon.pdf",
 
         },
         {
@@ -28,16 +27,16 @@ export function Portfolio() {
             description: "Newton-Raphson Yöntemi’ni nümerik analiz kapsamında araştırarak öğrenme fırsatı buldum ve bu sayede denklemlerin köklerini hızlı ve etkili bir şekilde bulmayı sağlayan güçlü bir yöntem olduğunu kavradım.",
             tags: [],
             image: (
-                <img src="https://i.postimg.cc/Y2J2qCK2/a-Incremental-Iterative-Technique-b-Full-Newton-Raphson-Method.png" alt="Newton-Raphson" width="250" />
+                <img src="/Photograph/Newton-Raphson-Method.png" alt="Newton-Raphson" width="250"/>
             ),
-            pdfLink: "/MertcanAydemir_202313709075_Nümerik.pdf",
+            pdfLink: "/pdf_file/MertcanAydemir_202313709075_Nümerik.pdf"
         },
         {
             title: "Silah Lisanslama Ve Satış Uyguluması",
             description: "Bir silah sistemin alışı için yapılması gerekenler ve satış işlemleri için bir uygulama tasarladım.",
             tags: ["PyQt5", "SqLite", "Python"],
             image: (
-                <img src="https://i.postimg.cc/SQG9jKph/8db14c-7fd0d477eb7144199e8f9cc118967d0d-mv2.webp" alt="Silah Lisanslama Ve Satış" width="300" height="500" />
+                <img src="/Photograph/Silah_sistemleri.jpg" alt="Silah Lisanslama Ve Satış" width="300" height="500" />
             ),
             githubLink: "https://github.com/MertcanAydemir/arms_licensing_and_sales",
         },
@@ -46,7 +45,7 @@ export function Portfolio() {
             description: "Soru bankası uygulamam, kullanıcıların kendi sorularını hazırlayıp sisteme yükleyebildiği kişisel ve özelleştirilebilir bir soru yönetim platformudur.",
             tags: ["PyQt5", "Python"],
             image: (
-                <img src="https://i.postimg.cc/zfLcxWpT/kitap-okumak-2.webp" alt="Soru Bankası" width="400" />
+                <img src="/Photograph/kitap.webp" alt="Soru Bankası"  />
             ),
             githubLink: "https://github.com/MertcanAydemir/question_bank_",
         },
@@ -55,7 +54,7 @@ export function Portfolio() {
             description: "Metin düzenleyici uygulamam, kullanıcıların yazılarını oluşturup düzenleyebileceği basit ve işlevsel bir yazım aracı olarak tasarlanmıştır.",
             tags: ["PyQt5", "Python"],
             image: (
-                <img src="https://i.postimg.cc/BQxvYYMB/cke-default-font.png" alt="Metin Düzenleyici" width="400" />
+                <img src="/Photograph/metin_düzenleyeci.png" alt="Metin Düzenleyici"  />
             ),
             githubLink: "https://github.com/MertcanAydemir/text_editor_",
         },
